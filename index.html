@@ -1,1 +1,105 @@
+<style>
+    /* Pozadie celej stránky a nastavenie textu na 14px */
+    body, .page-content {
+        background-color: #23120c !important;
+        color: #d8b37e !important;
+        font-size: 14px !important;
+    }
 
+    /* Aplikovanie 14px pre odstavce */
+    p {
+        font-size: 14px !important;
+    }
+
+    /* Efekt vystúpenia (zväčšenia) pre všetky gify pri prejdení myšou */
+    .page-content img[src$=".gif"] {
+        transition: transform 0.3s ease;
+    }
+    .page-content img[src$=".gif"]:hover {
+        transform: scale(1.08);
+    }
+
+    /* Text po rozkliknutí má farbu textu na stránke */
+    .info-text { 
+        display: none; 
+        margin-top: 5px; 
+        margin-bottom: 15px; 
+        padding-left: 20px; 
+        text-align: justify; 
+        font-size: 14px; 
+        color: #d8b37e !important; 
+    }
+    
+    .clickable-link { 
+        cursor: pointer; 
+        color: #FA8072; 
+        text-decoration: none; 
+        display: block; 
+        margin-bottom: 10px; 
+        transition: all 0.3s ease;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .clickable-link:hover { color: #d66f62; padding-left: 5px; }
+    
+    /* Bodka ako indikátor */
+    .clickable-link::before { 
+        content: "• "; 
+        margin-right: 5px; 
+        color: #FA8072; 
+    }
+</style>
+
+<div class="page-content" style="padding: 15px;">
+
+<center><img src="https://i.ibb.co/XkZMSyR/bylinky2.png" width="76%"></center>
+
+<p style="text-align: justify">Existuje viacero definícií <font color="#FA8072">bylinkárstva,</font> pričom každá z nich je pravdivá a závisí od jednotlivých profesorov, ktorú z nich si osvoja a budú pri vyučovaní používať. Vo všeobecnosti možno bylinkárstvo definovať ako štúdium <font color="#FA8072">kúzelnických i muklovských bylín a húb</font>, pričom v muklovskom svete zodpovedá botanike. Študenti sa učia jednotlivé rastliny poznávať, oboznamujú sa s ich vlastnosťami a spôsobom využitia v ďalších odboroch kúzelníckeho vzdelávania.<br><br>
+
+<img src="https://i.ibb.co/1ZYZF8y/byl4.gif" style=" margin-left: 16%; margin-right: 0%; width: 20%;" ><img src="https://i.ibb.co/qdH0y9j/byl6.gif" style="margin-left: 5%; margin-right: 0%; width: 20%;" ><img src="https://i.ibb.co/xDr1qSM/byl5.gif" style=" margin-left: 5%; margin-right: 0%; width: 20%;" ><br><br>
+
+Najčastejšie nachádza bylinkárstvo svoje uplatnenie v odboroch, akými sú <font color="#FA8072">lektvary</font> a <font color="#FA8072">kúzelnícke liečiteľstvo.</font> Mnohé rastliny slúžia ako prísady do lektvarov, a preto je znalosť byliniek nevyhnutnou súčasťou vzdelania každého lektvarológa. Rovnako dôležitá je aj pre budúcich lékokouzelníkov a liečiteľov, keďže v tejto oblasti sa z mnohých bylín vyrábajú lieky.</p>
+
+<center><img src="https://i.ibb.co/fpj4Gg0/e090a56a2912fe04329539745727e34b.jpg" width="50%"></center><br>
+
+<font color="#FA8072"><b><u><big>Základné pomôcky: </font></b></u></big><br><br>
+
+<div style="color: #FA8072; font-style: italic;">
+    <span class="clickable-link" onclick="document.getElementById('info-kvetinac').style.display = (document.getElementById('info-kvetinac').style.display === 'block' ? 'none' : 'block')">
+        Kvetináč/truhlík
+    </span>
+    <div id="info-kvetinac" class="info-text" style="font-style: normal;">
+        Rastliny je možné pestovať priamo v záhonoch alebo v dvoch základných typoch úložných nádob, ktoré sa odlišujú predovšetkým veľkosťou a spôsobom hospodárenia s vodou. 
+        <b style="color: #FA8072;">Kvetináče</b> sú spravidla menšie a sú navrhnuté tak, aby prebytočná voda mohla voľne odtekať spodnou časťou nádoby, preto sú obecne vhodniejsze pre rastliny citlivejšie na množstvo dodávanej vody. 
+        <b style="color: #FA8072;">Truhlíky</b> majú naopak väčší objem a voda z nich obvykle neodteká, takže sú skôr vhodné pre vlhkomilné byliny, alebo druhy menej náchylné na možnosť preliatia.
+    </div>
+
+    <span class="clickable-link" onclick="document.getElementById('info-noznice').style.display = (document.getElementById('info-noznice').style.display === 'block' ? 'none' : 'block')">
+        Záhradnícke nožnice a nožík
+    </span>
+    <div id="info-noznice" class="info-text" style="font-style: normal;">
+        Tieto nástroje slúžia na úpravu rastlín, či už k odstráneniu zoschnutých častí, alebo odstráneniu časti rastlinky, vďaka čomu môžeme zlepšiť jej rast, alebo ju zachrániť pred vyhynutím.
+    </div>
+
+    <span class="clickable-link" onclick="document.getElementById('info-lopatka').style.display = (document.getElementById('info-lopatka').style.display === 'block' ? 'none' : 'block')">
+        Lopatka
+    </span>
+    <div id="info-lopatka" class="info-text" style="font-style: normal;">
+        Predstavuje základnú časť výbavy každého bylinkára, slúži najmä na sadenie a presádzanie rastlín.
+    </div>
+</div><br>
+
+<p style="text-align: justify">
+Počas vyučovania sa môžete stretnúť aj tzv. <font color="#FA8072">špecializovanými pomôckami,</font> ktoré sa využívajú iba pri manipulácii s niektorými rastlinami. Patria medzi ne napríklad <font color="#FA8072">rukavice z dračej kože, zástera, či klapky na uši.</font> </p>
+
+<br><br>
+<center>
+    <img src="https://i.ibb.co/ZTrJtzJ/byl1.gif" style="width: 20%; margin: 0 2%;">
+    <img src="https://i.ibb.co/cQKgw4g/byl3.gif" style="width: 20%; margin: 0 2%;">
+    <img src="https://i.ibb.co/F4zPh6h/byl2.gif" style="width: 20%; margin: 0 2%;">
+</center>
+<br><br>
+
+<p style="text-align: right; clear: both;"><img src="https://i.ibb.co/tPtxVkk/pppp.png" width="13%"></p>
+
+</div>
